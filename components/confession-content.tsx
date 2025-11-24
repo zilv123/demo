@@ -59,6 +59,10 @@ export default function ConfessionContent() {
           {displayText.length < fullText.length && <span className="animate-pulse">|</span>}
         </h1>
 
+        <div className="mb-12">
+          <img src="/【恋风】20250911151537.jpeg" alt="表白配图" className="w-60 h-60 rounded-lg shadow-lg mx-auto" />
+        </div>
+        
         {/* 副文本 */}
         <p className="text-2xl text-pink-200 mb-16 opacity-0 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-1000">
           这是我最真诚的表白

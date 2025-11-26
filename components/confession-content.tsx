@@ -64,13 +64,13 @@ export default function ConfessionContent() {
         </div>
         
         {/* 副文本 */}
-        <p className="text-2xl text-pink-200 mb-16  fade-in slide-in-from-bottom-4 duration-1000 delay-1000">
+        <p className="text-2xl text-pink-200 mb-16 opacity-0 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-1000">
           这是我最真诚的表白
         </p>
 
         {/* 按钮区 */}
         {showButtons && (
-          <div className="flex gap-8 justify-center  fade-in scale-in duration-1000">
+          <div className="flex gap-8 justify-center opacity-0 animate-in  fade-in scale-in duration-1000">
             <button
               onClick={handleYes}
               className="px-12 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xl font-bold rounded-full hover:shadow-2xl hover:shadow-pink-500/50 transition-all duration-300 transform hover:scale-110"

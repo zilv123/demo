@@ -8,7 +8,7 @@ export default function ConfessionContent() {
   const [confirmed, setConfirmed] = useState(false)
   const [noCount, setNoCount] = useState(0)
 
-  const fullText = "张韩雨666"
+  const fullText = "张韩雨"
 
   useEffect(() => {
     if (displayText.length < fullText.length) {

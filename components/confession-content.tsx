@@ -53,16 +53,16 @@ export default function ConfessionContent() {
   return (
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="z-10 text-center">
+        <div className="mb-12">
+          <video src="/video.mp4" autoPlay loop muted className="w-150 h-150 rounded-lg shadow-lg mx-auto"></video>
+          <img src="/【恋风】20250911151537.jpeg" alt="表白配图" className="w-60 h-60 rounded-lg shadow-lg mx-auto" />
+        </div>
+        
         {/* 主标题 */}
         <h1 className="text-7xl font-bold mb-12 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent h-24 flex items-center justify-center">
           {displayText}
           {displayText.length < fullText.length && <span className="animate-pulse">|</span>}
         </h1>
-
-        <div className="mb-12">
-          <video src="/video.mp4" autoPlay loop muted className="w-100 h-100 rounded-lg shadow-lg mx-auto"></video>
-          <img src="/【恋风】20250911151537.jpeg" alt="表白配图" className="w-60 h-60 rounded-lg shadow-lg mx-auto" />
-        </div>
         
         {/* 副文本 */}
         <p className="text-2xl text-pink-200 mb-16 opacity-0 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-1000">

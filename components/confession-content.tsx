@@ -61,7 +61,7 @@ export default function ConfessionContent() {
 
         <div className="mb-12">
           <img src="/【恋风】20250911151537.jpeg" alt="表白配图" className="w-60 h-60 rounded-lg shadow-lg mx-auto" />
-          <video src="/video.mp4" autoplay loop className="w-60 h-60 rounded-lg shadow-lg mx-auto"></video>
+          <video src="/video.mp4" className="rounded-lg shadow-lg mx-auto" autoplay loop></video>
         </div>
         
         {/* 副文本 */}

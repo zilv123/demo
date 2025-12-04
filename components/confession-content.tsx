@@ -51,11 +51,11 @@ export default function ConfessionContent() {
   }
 
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="z-10 text-center">
+    <div className="absolute inset-0 flex items-center justify-center py-20">
+      <div className="z-10 text-center max-w-4xl px-4">
+        {/* 图片 */}
         <div className="mb-12">
-          <video src="/video.mp4" autoPlay loop muted className="w-150 h-150 rounded-lg shadow-lg mx-auto"></video>
-          <img src="/【恋风】20250911151537.jpeg" alt="表白配图" className="w-60 h-60 rounded-lg shadow-lg mx-auto" />
+          <img src="/img001.jpeg" alt="表白配图" className="w-80 h-80 rounded-lg shadow-2xl mx-auto object-cover" />
         </div>
         
         {/* 主标题 */}
@@ -71,7 +71,7 @@ export default function ConfessionContent() {
 
         {/* 按钮区 */}
         {showButtons && (
-          <div className="flex gap-8 justify-center opacity-0 animate-in  fade-in scale-in duration-1000">
+          <div className="flex gap-8 justify-center opacity-0 animate-in fade-in scale-in duration-1000">
             <button
               onClick={handleYes}
               className="px-12 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xl font-bold rounded-full hover:shadow-2xl hover:shadow-pink-500/50 transition-all duration-300 transform hover:scale-110"

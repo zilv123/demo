@@ -67,39 +67,6 @@ export default function ConfessionContent() {
           {displayText}
           {displayText.length < fullText.length && <span className="animate-pulse">|</span>}
         </h1>
-        
-        {/* 副文本 */}
-        <p className="text-lg sm:text-2xl text-pink-200 mb-8 sm:mb-16 opacity-0 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-1000">
-          这是我最真诚的表白
-        </p>
-
-        {/* 按钮区 */}
-        {showButtons && (
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center opacity-0 animate-in fade-in scale-in duration-1000 px-4">
-            <button
-              onClick={handleYes}
-              className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-lg sm:text-xl font-bold rounded-full hover:shadow-2xl hover:shadow-pink-500/50 transition-all duration-300 transform hover:scale-110 active:scale-95"
-            >
-              我也喜欢你 💖
-            </button>
-
-            <button
-              onClick={handleNo}
-              className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-lg sm:text-xl font-bold rounded-full hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-110 active:scale-95 relative"
-              style={{
-                transform:
-                  noCount > 0
-                    ? `translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px)`
-                    : "translate(0, 0)",
-              }}
-            >
-              {noCount === 0 && "我再想想"}
-              {noCount === 1 && "再等等"}
-              {noCount === 2 && "快抓不住了"}
-              {noCount >= 3 && "你逃不了！"}
-            </button>
-          </div>
-        )}
       </div>
     </div>
   )

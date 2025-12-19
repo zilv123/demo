@@ -57,7 +57,7 @@ export default function ConfessionContent() {
         <div className="mb-8 sm:mb-12">
           <img 
             src="/img001.jpeg" 
-            alt="表白配图" 
+            alt="" 
             className="w-48 h-48 sm:w-80 sm:h-80 rounded-lg shadow-2xl mx-auto object-cover" 
           />
         </div>
